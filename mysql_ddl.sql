@@ -88,3 +88,15 @@ ALTER TABLE `bigbang`.`summ_secretaria`
 CHANGE COLUMN `pkey` `pkey` BIGINT(20) NOT NULL AUTO_INCREMENT ,
 ADD PRIMARY KEY (`pkey`);
 
+create table if not exists execucaoorcamentaria (
+    pkey bigint(20),
+    ano Numeric,
+    secretaria Text,
+    TotalDisponivel Decimal(20,2)
+);
+
+
+ALTER TABLE `bigbang`.`execucaoorcamentaria`
+CHANGE COLUMN `pkey` `pkey` BIGINT(20) NOT NULL AUTO_INCREMENT ,
+ADD PRIMARY KEY (`pkey`);
+

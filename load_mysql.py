@@ -123,7 +123,7 @@ def createSummAtendimento(conn, month, year):
 def main():
 
     try:
-      cnx = mysql.connector.connect(host='52.7.200.222', user='app', password = 'app', database='bigbang')
+      cnx = mysql.connector.connect(user='root', password = '', database='bigbang')
     except mysql.connector.Error as err:
       if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("Something is wrong with your user name or password")
